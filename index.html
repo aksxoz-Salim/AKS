@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKS Store - Accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AKS Electronics</div>
+            <ul>
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#produits">Produits</a></li>
+
+                <li><a href="#panier">Panier</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <section class="hero">
+            <h1>Bienvenue chez AKS ELECTRO</h1>
+            <p>Découvrez les meilleurs produits électroniques, avec un long catalogue.</p>
+            <a href="#produits" class="cta">Voir les produits</a>
+        </section>
+        <main>
+        <section class="meilleures-ventes">
+            <h2>Meilleures ventes</h2>
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="images/photo_3_2025-08-21_00-51-58.jpg" alt="AirPods">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo_1_2025-08-22_03-43-37.jpg" alt="Iphone 15 Pro Mx">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo_4_2025-08-22_03-43-37.jpg" alt="Apple Watch Ultra">
+                </div>
+                <div class="slide fade">
+                    <img src="images/photo_3_2025-08-22_03-43-37.jpg" alt="AirPods Max">
+                </div>
+            </div>
+        </section>
+        <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+        }
+        window.onload = showSlides;
+        </script>
+        <section class="offre-jour">
+            <h2>Offre du jour</h2>
+            <div class="offre-list">
+                <div class="offre">
+                    <img src="images/photo_3_2025-08-21_00-51-58.jpg" alt="Promo iPad Air">
+                    <p>iPad Air - 15% de réduction</p>
+                </div>
+                <div class="offre">
+                    <img src="images/photo_4_2025-08-22_03-43-37.jpg" alt="Promo Apple Watch">
+                    <p>Apple Watch SE - 20% de réduction</p>
+                </div>
+                <div class="offre">
+                    <img src="images/photo_5_2025-08-22_03-43-37.jpg" alt="Promo HomePod">
+                    <p>HomePod Mini - 10% de réduction</p>
+                </div>
+                <div class="offre">
+                    <img src="images/photo_3_2025-08-21_00-51-58.jpg" alt="Promo AirPods">
+                    <p>AirPods 3 - 18% de réduction</p>
+                </div>
+            </div>
+        </section>
+        <section id="produits" class="produits">
+            <h2>Nos Produits</h2>
+            <div class="produit-list">
+                <div class="produit">
+                    <img src="images/photo_2_2025-08-22_03-43-37.jpg" alt="iPhone 15">
+                    <h3>iPhone 15</h3>
+                    <p>Le dernier smartphone avec écran OLED et puce A17.</p>
+                    <span class="prix">999€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_2_2025-08-22_03-43-37.jpg" alt="MacBook Pro">
+                    <h3>MacBook Pro</h3>
+                    <p>Puissance et élégance pour les professionnels.</p>
+                    <span class="prix">2199€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_3_2025-08-21_00-51-58.jpg" alt="AirPods Pro">
+                    <h3>AirPods Pro</h3>
+                    <p>Son immersif et réduction de bruit active.</p>
+                    <span class="prix">279€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_3_2025-08-22_03-43-37.jpg" alt="iPad Air">
+                    <h3>iPad Air</h3>
+                    <p>Tablette légère et puissante pour tous les usages.</p>
+                    <span class="prix">699€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_4_2025-08-22_03-43-37.jpg" alt="Apple Watch Ultra">
+                    <h3>Apple Watch Ultra</h3>
+                    <p>Montre connectée haut de gamme, autonomie longue durée.</p>
+                    <span class="prix">849€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_5_2025-08-22_03-43-37.jpg" alt="HomePod Mini">
+                    <h3>HomePod Mini</h3>
+                    <p>Enceinte intelligente, son puissant et compact.</p>
+                    <span class="prix">109€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_3_2025-08-21_00-51-58.jpg" alt="AirPods Max">
+                    <h3>AirPods Max</h3>
+                    <p>Casque audio premium, son immersif.</p>
+                    <span class="prix">629€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_6_2025-08-22_03-43-37.jpg" alt="Apple TV 4K">
+                    <h3>Apple TV 4K</h3>
+                    <p>Divertissement en 4K HDR, streaming et jeux.</p>
+                    <span class="prix">199€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_7_2025-08-22_03-43-37.jpg" alt="Magic Keyboard">
+                    <h3>Magic Keyboard</h3>
+                    <p>Clavier sans fil, confort et précision Apple.</p>
+                    <span class="prix">149€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_8_2025-08-22_03-43-37.jpg" alt="Magic Mouse">
+                    <h3>Magic Mouse</h3>
+                    <p>Souris tactile, design minimaliste.</p>
+                    <span class="prix">89€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_9_2025-08-22_03-43-37.jpg" alt="Studio Display">
+                    <h3>Studio Display</h3>
+                    <p>Écran Retina 5K, qualité professionnelle.</p>
+                    <span class="prix">1799€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+                <div class="produit">
+                    <img src="images/photo_10_2025-08-22_03-43-37.jpg" alt="Mac Studio">
+                    <h3>Mac Studio</h3>
+                    <p>Ordinateur de bureau ultra-puissant pour créateurs.</p>
+                    <span class="prix">2299€</span>
+                    <button>Ajouter au panier</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <form>
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Votre message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Contact : salimsoule525@gmail.com | © 2025 Studio AKS. Tous droits réservés. .</p>
+    </footer>
+</body>
+</html>
