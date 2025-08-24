@@ -305,3 +305,75 @@ footer {
         width: 90%;
     }
 }
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+    header {
+        padding: 0.5rem 0;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+    }
+    .logo {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .hero {
+        padding: 2rem 0.5rem 1.5rem 0.5rem;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .offre-jour, .meilleures-ventes, .produits, .panier, .contact {
+        padding: 1rem 0.5rem;
+        margin: 1rem 0.2rem;
+        max-width: 100%;
+    }
+    .offre-list, .produit-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .offre, .produit {
+        width: 100%;
+        min-width: 0;
+        padding: 1rem 0.5rem;
+    }
+    .offre img, .produit img, .slide img {
+        height: 120px;
+        width: 100%;
+        max-width: 100%;
+    }
+    .slide, .slide img {
+        height: 180px;
+    }
+    .slideshow-container {
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    .contact form {
+        gap: 0.5rem;
+    }
+    .contact input, .contact textarea {
+        font-size: 0.95rem;
+    }
+    .cta {
+        padding: 0.7rem 1.2rem;
+        font-size: 1rem;
+    }
+    footer {
+        padding: 1rem 0 0.5rem 0;
+        font-size: 0.9rem;
+    }
+}
